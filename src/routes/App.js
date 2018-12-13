@@ -67,6 +67,6 @@ export default class App extends Component {
 const SlideCSS = styled.div`
   height: 100vh;
   max-height: 100vh;
-  padding-top: 3.5rem;
+  padding: 3.5rem 1rem 3.5rem 1rem;
   overflow: scroll;
 `

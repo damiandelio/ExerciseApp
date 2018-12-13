@@ -14,7 +14,7 @@ const AppBottomNavigation = ({ index, handleChange }) => {
       value={index}
       onChange={handleChange}
       showLabels
-      style={{position: 'fixed', bottom: '0px', width: '100%'}}
+      style={{position: 'fixed', bottom: '0px', width: '100%', boxShadow: '0 0px 2px 0px rgba(0, 0, 0, 0.15)'}}
     >
       <BottomNavigationAction label="Calendar" icon={<CalendarIcon />} />
       <BottomNavigationAction label="Train" icon={<TrainIcon />} />
