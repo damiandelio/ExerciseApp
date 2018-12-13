@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ExerciseAPP",
+  "name": "ExerciseAPP",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +11,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#B71C1C",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  ​​"orientation": "portrait"
 }

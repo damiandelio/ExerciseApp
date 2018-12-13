@@ -1,0 +1,63 @@
+/store ?
+
+/containers
+
+/routes
+  App (/)
+  Calendar
+  Train
+  Exercises
+  ExercisesProgressions (/progressions/{})
+  ExerciseDescription (/exercises/{id})
+
+/utils
+
+/views
+  AppBar
+  Menu
+  BottomNavigation
+  ExercisesPreview
+
+-----------------------------
+
+<App />
+  Segun el estado de BottomNavigation renderiza Calendar, Train o Exercises.
+
+<Calendar />
+  Muestra calendario de rutina...
+
+<Train />
+  Muestra cronometro...
+
+<Exercises />
+  Muestra una lista con todas las progreciones renderizadas en el ExercisesPreview component.
+
+<ExercisesProgressions />
+  Muestra lista de progreciones espesifica segun el ejercicio seleccionado.
+
+<ExerciseDescription />
+  Resive props:
+    - Icono del ejercicio
+    - Nombre del ejercicio
+    - Descripcion del ejercicio
+    - Link del video
+
+<AppBar />
+  Resive como prop el titulo.
+  Tiene el boton del menu para mostrarlo o ocultarlo.
+
+<Menu />
+  Tiene links...
+
+<BottomNavigation />
+  Alterna el estado de visualizacion del App para renderizar Calendar, Train o Exercises.
+
+<ExercisesPreview />
+  Resive props:
+    - Icono del ejercicio
+    - Nombre del ejercicio
+
+
+-----------------------------
+
+API
