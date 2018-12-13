@@ -4,7 +4,7 @@ export default class Train extends Component {
   render() {
     return (
       <div>
-        <h2 style={{marginTop: '6rem'}}>Train</h2>
+        <h2>Train</h2>
       </div>
     )
   }

@@ -25,7 +25,7 @@ const MyAppBar = (props) => {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor:'#B71C1C'}}>
+      <AppBar position="fixed" >
         <Toolbar>
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
