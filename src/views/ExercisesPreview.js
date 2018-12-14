@@ -9,7 +9,7 @@ const ExercisePreview = ({exerciseName, exerciseImg}) => {
     <Grid item xs={12}>
       <Container>
         <Img />
-        <p style={{marginLeft: '1rem'}}>{exerciseName}</p>
+        <p style={{marginLeft: '1rem', fontWeight: '500'}}>{exerciseName}</p>
       </Container>
     </Grid>
   )

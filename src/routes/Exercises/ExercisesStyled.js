@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 
-export const CategoryName = styled.div`
+export const CategoryName = styled.h2`
   margin: 1rem 0 0.5rem 0;
   font-size: 14pt;
+  font-weight: 500; /* 500 = Roboto Medium */
 `
 
 export const GridView = styled(Grid)`
