@@ -9,10 +9,11 @@ export const Container = styled.div`
     border-style: none none solid none;
     border-width: 1px;
     border-color: #C9C9C9;
+    cursor: pointer;
 `
 
 export const Img = styled.div`
   width: 4rem;
   height: 4rem;
-  background: #000;
+  background: #242424;
 `
