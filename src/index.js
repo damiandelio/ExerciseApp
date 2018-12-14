@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './routes/App';
+import App from './routes/App/App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
+import 'typeface-roboto';
 
 ReactDOM.render(
   <BrowserRouter>

@@ -21,8 +21,7 @@ const styles = {
   },
 };
 
-const MyAppBar = (props) => {
-  const { classes } = props;
+const MyAppBar = ({ classes, title }) => {
   return (
     <div className={classes.root}>
       <AppBar position="fixed" >
@@ -31,7 +30,7 @@ const MyAppBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            ExerciseApp
+            { title }
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>

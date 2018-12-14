@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import Grid from '@material-ui/core/Grid';
-import ExercisesPreview from '../views/ExercisesPreview';
+import ExercisesPreview from '../../views/ExercisesPreview';
 
 // styles
-import { CategoryName } from './ExercisesStyled';
+import { CategoryName, GridView } from './ExercisesStyled';
 
 export default class Exercises extends Component {
   state = {
@@ -17,16 +16,16 @@ export default class Exercises extends Component {
         {id: '06', name: 'Planche', img: 'aca va la url'},
       ],
       dynamic: [
-        {id: '01', name: 'Push-up Variations', img: 'aca va la url'},
-        {id: '01', name: 'Dip Variations', img: 'aca va la url'},
-        {id: '01', name: 'Row Variations', img: 'aca va la url'},
-        {id: '01', name: 'Pull-up Variations', img: 'aca va la url'},
-        {id: '01', name: 'Curl Variations', img: 'aca va la url'},
-        {id: '01', name: 'Muscle-up Variations', img: 'aca va la url'},
-        {id: '01', name: 'V-up Variations', img: 'aca va la url'},
-        {id: '01', name: 'HLL Variations', img: 'aca va la url'},
-        {id: '01', name: 'Deck Squat Variations', img: 'aca va la url'},
-        {id: '01', name: 'Single Leg Squat Variations', img: 'aca va la url'},
+        {id: '07', name: 'Push-up Variations', img: 'aca va la url'},
+        {id: '08', name: 'Dip Variations', img: 'aca va la url'},
+        {id: '09', name: 'Row Variations', img: 'aca va la url'},
+        {id: '10', name: 'Pull-up Variations', img: 'aca va la url'},
+        {id: '11', name: 'Curl Variations', img: 'aca va la url'},
+        {id: '12', name: 'Muscle-up Variations', img: 'aca va la url'},
+        {id: '13', name: 'V-up Variations', img: 'aca va la url'},
+        {id: '14', name: 'HLL Variations', img: 'aca va la url'},
+        {id: '15', name: 'Deck Squat Variations', img: 'aca va la url'},
+        {id: '16', name: 'Single Leg Squat Variations', img: 'aca va la url'},
       ]
     }
   }
@@ -34,12 +33,12 @@ export default class Exercises extends Component {
   render() {
     const { exercises } = this.state;
     return (
-      <Grid container style={{maxWidth: '30rem'}}>
+      <GridView container>
         <CategoryName>Static: </CategoryName>
         {exercises.static.map( item => <ExercisesPreview key={item.id} exerciseName={item.name} exerciseImg={item.img} />)}
         <CategoryName>Dynamic: </CategoryName>
         {exercises.dynamic.map( item => <ExercisesPreview key={item.id} exerciseName={item.name} exerciseImg={item.img} />)}
-      </Grid>
+      </GridView>
     )
   }
 }

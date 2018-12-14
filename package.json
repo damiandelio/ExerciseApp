@@ -16,7 +16,8 @@
     "react-swipeable-views": "^0.13.0",
     "react-test-renderer": "^16.6.3",
     "redux": "^4.0.1",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "typeface-roboto": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",
