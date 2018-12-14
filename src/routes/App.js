@@ -1,26 +1,23 @@
 import React, { Component } from 'react'
 // import { Route, Switch } from "react-router-dom"
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
 import AppBar from '../views/AppBar';
 import BottomNavigation from '../views/BottomNavigation';
 import Calendar from './Calendar';
 import Train from './Train';
 import Exersices from './Exercises';
-import styled from 'styled-components'; // styled css
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#B71C1C',
-    },
-  },
-});
+// Styles
+import AppTheme from './AppTheme'
+import { SlideCSS } from './AppStyled.js';
+
 
 export default class App extends Component {
   state = {
-    index: 0,
+    // index es el valor que indica la pestaña activa
+    index: 1,
   };
 
   handleChange = (event, value) => {
@@ -40,7 +37,7 @@ export default class App extends Component {
 
     return (
       <CssBaseline>
-        <MuiThemeProvider theme={theme}>
+        <MuiThemeProvider theme={AppTheme}>
           <AppBar />
           <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
             <SlideCSS>
@@ -59,14 +56,3 @@ export default class App extends Component {
     )
   }
 }
-
-
-
-// styled
-
-const SlideCSS = styled.div`
-  height: 100vh;
-  max-height: 100vh;
-  padding: 3.5rem 1rem 3.5rem 1rem;
-  overflow: scroll;
-`
